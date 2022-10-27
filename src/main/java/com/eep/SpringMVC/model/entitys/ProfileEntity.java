@@ -13,10 +13,12 @@ public class ProfileEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "nome")
+    @Column(nullable = false, length = 45)
     private String nome;
 
-    @Column(name = "usuario")
-    private String usuario;
+    @Column(nullable = false, length = 45)
+    private String username;
 
+    @Column(nullable = false, length = 64)
+    private String password;
 }

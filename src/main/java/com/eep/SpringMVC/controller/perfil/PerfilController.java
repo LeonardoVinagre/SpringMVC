@@ -5,9 +5,7 @@ import com.eep.SpringMVC.model.entitys.ProfileEntity;
 import com.eep.SpringMVC.model.repository.PerfilRepository;
 import com.eep.SpringMVC.model.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,9 +18,18 @@ public class PerfilController {
 
 
     @GetMapping
-    List<ProfileEntity> findAll(){
+    List<ProfileEntity> findAll() {
+
         return repository.findAll();
     }
 
-
+//    @PostMapping("/siginUp")
+//    public ProfileEntity register(@RequestBody ProfileEntity profile) {
+//
+//        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+//        String encodedPassword = passwordEncoder.encode(profile.getPassword());
+//        profile.setPassword(encodedPassword);
+//        repository.save(profile);
+//        return profile;
+//    }
 }
