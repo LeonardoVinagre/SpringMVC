@@ -2,8 +2,7 @@ package com.eep.SpringMVC.model.repository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.eep.SpringMVC.model.entitys.ProfileEntity;
-import com.eep.SpringMVC.model.repository.PerfilRepository;
+import com.eep.SpringMVC.model.entitys.Profile;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -15,27 +14,27 @@ import org.springframework.test.annotation.Rollback;
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
 @Rollback(false)
-public class PerfilRepositoryTests {
+public class ProfileRepositoryTests {
 
     @Autowired
     private TestEntityManager entityManager;
 
     @Autowired
-    private PerfilRepository repo;
+    private ProfileRepository repo;
 
     // test methods go below
 
     @Test
     public void testCreateUser() {
-        ProfileEntity profile = new ProfileEntity();
+        Profile profile = new Profile();
         profile.setNome("Leonardo Rossi Vinagre");
         profile.setPassword("s2ab5on9ta");
         profile.setUsername("Lvinagre");
 
 
-        ProfileEntity savedUser = repo.save(profile);
+        Profile savedUser = repo.save(profile);
 
-        ProfileEntity existUser = entityManager.find(ProfileEntity.class, savedUser.getId());
+        Profile existUser = entityManager.find(Profile.class, savedUser.getId());
 
         assertThat(profile.getUsername()).isEqualTo(existUser.getUsername());
 
