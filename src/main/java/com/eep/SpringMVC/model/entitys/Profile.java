@@ -39,7 +39,6 @@ public class Profile {
                     name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "profile_id", nullable = true)
+    @OneToMany( mappedBy = "profile",fetch = FetchType.LAZY)
     private List<Post> posts;
 }

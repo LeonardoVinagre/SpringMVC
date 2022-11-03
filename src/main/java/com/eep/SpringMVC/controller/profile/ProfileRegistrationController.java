@@ -1,4 +1,4 @@
-package com.eep.SpringMVC.controller.perfil;
+package com.eep.SpringMVC.controller.profile;
 
 import com.eep.SpringMVC.model.dto.ProfileResgistrationDto;
 import com.eep.SpringMVC.model.service.profile.ProfileService;

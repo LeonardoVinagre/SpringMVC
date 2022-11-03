@@ -26,10 +26,10 @@ public class Post {
     @NonNull
     private String post;
 
-    @JsonIgnore
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "profile_id")
-    private Profile autor;
+    @JsonIgnore
+    private Profile profile;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "post_id")

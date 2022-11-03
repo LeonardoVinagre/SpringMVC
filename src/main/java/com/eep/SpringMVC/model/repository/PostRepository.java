@@ -19,6 +19,6 @@ public interface PostRepository extends CrudRepository<Post, Long> {
                   @Param("post") String post);
 
 
-    @Query("Select post FROM Post post WHERE post.id = :id")
+    @Query("Select post FROM Post post WHERE post.profile.id = :id")
     List<Post> getUserPosts(@Param("id") Integer id);
 }
