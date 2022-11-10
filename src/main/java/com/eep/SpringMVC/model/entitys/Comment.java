@@ -1,5 +1,6 @@
 package com.eep.SpringMVC.model.entitys;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
@@ -19,8 +20,9 @@ public class Comment {
 
     private String descricao;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "post_id", nullable = true)
+    @JsonIgnore
     private Post post;
 
 }

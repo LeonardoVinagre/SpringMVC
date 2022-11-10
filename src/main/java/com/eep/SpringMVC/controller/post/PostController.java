@@ -44,6 +44,6 @@ public class PostController {
         Integer userId = profileService.getUserId(authentication.getName());
 
         postService.post(userId,titulo,post);
-        return ResponseEntity.status(HttpStatus.CREATED).body(post);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 }

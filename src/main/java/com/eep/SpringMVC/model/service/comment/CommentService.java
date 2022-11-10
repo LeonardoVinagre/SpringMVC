@@ -4,4 +4,6 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface CommentService {
+
+    void saveComment(Integer idPost, String comentario, String autor);
 }
