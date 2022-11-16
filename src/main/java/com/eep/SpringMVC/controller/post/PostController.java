@@ -1,5 +1,6 @@
 package com.eep.SpringMVC.controller.post;
 
+import com.eep.SpringMVC.model.dto.PostResumidoDto;
 import com.eep.SpringMVC.model.entitys.Post;
 import com.eep.SpringMVC.model.repository.PostRepository;
 import com.eep.SpringMVC.model.service.post.PostService;
@@ -42,8 +43,22 @@ public class PostController {
                             Authentication authentication){
 
         Integer userId = profileService.getUserId(authentication.getName());
-
-        postService.post(userId,titulo,post);
+        String userName = authentication.getName();
+        postService.post(userId,titulo,post,userName);
         return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+
+    @PatchMapping(path = "/change")
+    ResponseEntity<?> changePost(@RequestParam("id") Integer id,
+                                 @RequestParam("post") String post) {
+
+        postService.changePost(id, post);
+        return ResponseEntity.status(HttpStatus.OK).build();
+    }
+
+    @DeleteMapping(path = "/delete")
+    ResponseEntity<?> deletePost(@RequestParam("id") Integer id) {
+        postService.deletePost(id);
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 }

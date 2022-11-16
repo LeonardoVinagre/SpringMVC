@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <meta charset="ISO-8859-1">
+    <meta charset="UTF-8">
     <title>Registration</title>
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -10,18 +11,10 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed"
-                        data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                        aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span> <span
-                        class="icon-bar"></span> <span class="icon-bar"></span> <span
-                        class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#" th:href="@{/}">Registration and
-                    Login Module</a>
+                <a class="navbar-brand" href="#" th:href="@{/}">Spring MVC App</a>
             </div>
         </div>
     </nav>
@@ -36,7 +29,7 @@
                     </div>
 
                     <div th:if="${param.logout}">
-                        <div class="alert alert-info"> Você foi deslogado.</div>
+                        <div class="alert alert-info"> VocÃª foi deslogado.</div>
                     </div>
 
                     <div class="form-group">
@@ -46,8 +39,8 @@
                     </div>
                     <div class="form-group">
                         <label for="password"> Senha: </label>
-                        <input type="text" class="form-control" id="password" name="password"
-                               placeholder="Insira sua senha" >
+                        <input type="password" class="form-control" id="password" name="password"
+                               placeholder="Insira sua senha"  >
                     </div>
 
                     <div class="form-group">

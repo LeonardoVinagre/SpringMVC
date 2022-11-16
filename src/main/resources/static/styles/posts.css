@@ -1,0 +1,56 @@
+
+
+hr {
+    margin: 10px auto !important;
+    border-top: 1px solid black !important;
+}
+
+#post{
+    border:1px solid black;
+    margin: auto;
+    width: 30%;
+    padding: 10px 10px 0 10px;
+}
+
+.comentarios {
+
+    justify-content: space-around;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:1px solid black;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tituloCom {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    border-right: 1px solid gray;
+
+}
+.com {
+    width: 60%;
+}
+.editCom {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 40px;
+    align-self: center;
+}
+
+.textarea {
+    width: 50%;
+    height: auto;
+    outline: none;
+    resize:none;
+}
+
+.hiden{
+    display: none;
+}

@@ -21,6 +21,9 @@ public class Post {
     private Integer id;
 
     @NonNull
+    private String autor;
+
+    @NonNull
     private String titulo;
 
     @NonNull

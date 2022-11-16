@@ -20,4 +20,9 @@ public class CommentServiceImpl implements  CommentService{
     public void saveComment(Integer idPost, String comentario, String autor) {
         commentRepository.saveComment(idPost, comentario, autor);
     }
+    @Override
+    @Transactional
+    public void deleteComment(Integer id) {
+        commentRepository.deleteCommentById(id);
+    }
 }

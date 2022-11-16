@@ -6,4 +6,6 @@ import org.springframework.stereotype.Service;
 public interface CommentService {
 
     void saveComment(Integer idPost, String comentario, String autor);
+
+    void deleteComment(Integer id);
 }

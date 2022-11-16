@@ -18,7 +18,7 @@ public class Comment {
 
     private String nome_autor;
 
-    private String descricao;
+    private String comentario;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "post_id", nullable = true)
