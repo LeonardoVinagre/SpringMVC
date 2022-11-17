@@ -15,14 +15,14 @@ function deleteComment(commentaryId) {
               $.each(comments, function(index, comments){
                 comentariosDiv += `
                     <div class="comentario">
-                        <div class="tituloCom">
+                        <div class="tituloCom title">
                             ${comments.nome_autor}
                         </div>
                         <div class="com">
                             ${comments.comentario}
                         </div>
                         <div class="editCom">
-                            <button onclick="deleteComment(${comments.id})">Excluir</button>
+                            <button class="button-style" onclick="deleteComment(${comments.id})">Excluir</button>
                         </div>
                     </div>
                 `;
@@ -35,10 +35,10 @@ function deleteComment(commentaryId) {
                           `<div id="post" class="mb-3">
                               <div class="text-center">
                                   <div class="row">
-                                      <div>
+                                      <div class="title">
                                           Autor: ${post.autor}
                                       </div>
-                                      <div>
+                                      <div class="title">
                                           Titulo: ${post.titulo}
                                       </div>
                                   </div>
@@ -52,10 +52,11 @@ function deleteComment(commentaryId) {
                                   <div class="comentarios" id="comentarios">
                                     ${comentariosDiv}
                                   </div>
-                                  <div>
-                                      <button class="hiden" id="save-changes-${post.id}" onclick="saveChanges(${post.id})">Salvar</button>
-                                      <button id="edit-button-${post.id}" onclick="editPost(${post.id})">Editar</button>
-                                      <button onclick="deletePost(${post.id})">Deletar</button>
+                                  <div class="button-area">
+                                      <button class="hiden button-style" id="save-changes-${post.id}" onclick="saveChanges(${post.id})">Salvar</button>
+                                      <button class="button-style" id="edit-button-${post.id}" onclick="editPost(${post.id})">Editar</button>
+                                      <div class="space"></div>
+                                      <button class="button-style" onclick="deletePost(${post.id})">Deletar</button>
                                   </div>
                         </div>`;
 

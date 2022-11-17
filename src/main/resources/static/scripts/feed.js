@@ -37,7 +37,7 @@ $(document).ready(function () {
               $.each(comments, function(index, comments){
                 comentariosDiv += `
                     <div class="comentario">
-                        <div class="tituloCom">
+                        <div class="tituloCom title">
                             ${comments.nome_autor}
                         </div>
                         <div class="com">
@@ -55,10 +55,10 @@ $(document).ready(function () {
                           `<div id="post" class="mb-3">
                               <div class="text-center">
                                   <div class="row">
-                                      <div>
+                                      <div class="title">
                                           Autor: ${post.autor}
                                       </div>
-                                      <div>
+                                      <div class="title">
                                           Titulo: ${post.titulo}
                                       </div>
                                   </div>
@@ -74,8 +74,8 @@ $(document).ready(function () {
                                   </div>
                                       <textarea class="textarea hiden" id="newCommentText-${post.id}" placeholder="Insira seu comentario"></textarea>
                                   <div>
-                                      <button class="addComment-button" id="add-comment-${post.id}" onclick="newComment(${post.id})">Novo Comentario</button>
-                                      <button class="hiden" id="save-comment-${post.id}" onclick="saveComment(${post.id})">Salvar comentario</button>
+                                      <button class="addComment-button button-style" id="add-comment-${post.id}" onclick="newComment(${post.id})">Novo Comentario</button>
+                                      <button class="hiden button-style" id="save-comment-${post.id}" onclick="saveComment(${post.id})">Salvar comentario</button>
                                   </div>
                         </div>`;
 
