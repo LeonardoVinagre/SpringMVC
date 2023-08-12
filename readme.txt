@@ -1,5 +1,10 @@
 PROJETO SPRING MVC
 
+Ideia do projeto:
+Foi criado um projeto para desenvolver habilidades em java e aprender coisas novas.
+Foi desenvolvido um projeto que simula uma rede a qual usuarios podem realizar postagens de mensagens,
+acessar postagem de outro usuario e comentar.
+
 Como rodar o projeto:
 
 1° Alterando o login da conexão:

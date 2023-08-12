@@ -5,47 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c3707d3-648f-4410-a3e3-0cb5f13d6fcb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbactions.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/SpringMvcApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/config/SecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/controller/comment/CommentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/controller/main/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/controller/post/PostController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/controller/profile/ProfileController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/controller/profile/ProfileRegistrationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/dto/PostResumidoDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/dto/ProfileResgistrationDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/entitys/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/entitys/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/entitys/Profile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/entitys/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/repository/CommentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/repository/PostRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/repository/ProfileRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/service/comment/CommentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/service/comment/CommentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/service/post/PostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/service/post/PostServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/service/profile/ProfileService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/eep/SpringMVC/model/service/profile/ProfileServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/feed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/userPosts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/posts.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/feed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPosts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eep/SpringMVC/SpringMvcApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/eep/SpringMVC/model/repository/ProfileRepositoryTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +69,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/leona/Documents/Programação/SpringMVC/SpringMVC",
+    "last_opened_file_path": "C:/Users/leona/Documents/Programação/crud.produto",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
